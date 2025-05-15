@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap');
+
+@layer base {
+  body {
+    @apply bg-light dark:bg-dark text-textLight dark:text-textDark min-h-screen font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-full font-semibold transition-all shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-secondary hover:scale-105;
+  }
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-primary hover:scale-105;
+  }
+  .btn-success {
+    @apply bg-success text-white hover:bg-success/80;
+  }
+  .btn-warning {
+    @apply bg-warning text-white hover:bg-warning/80;
+  }
+  .btn-error {
+    @apply bg-error text-white hover:bg-error/80;
+  }
+  .glass {
+    @apply bg-glass dark:bg-glassDark backdrop-blur-md shadow-glass border border-white/20 dark:border-white/10;
+  }
+  .highlight {
+    @apply text-primary dark:text-secondary;
+  }
+  .gradient-hero {
+    @apply bg-gradient-to-br from-primary to-secondary;
+  }
+} 
