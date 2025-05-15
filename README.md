@@ -48,8 +48,4 @@ Total time spent on the project: [Your time here]
 
 ## Live URL
 
-[Your live URL here]
-
-## GitHub Repository
-
-[Your GitHub repo link here] 
+https://softshell-assignment-delta.vercel.app/
